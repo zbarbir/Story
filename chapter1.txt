@@ -1,1 +1,12 @@
-my first git lesson
+//my first git lesson
+
+go to working directory
+git init // to initialize your git repository
+ls -a // to list all hidden files like the .git
+git status// to see what files are in the staging area = being tracked
+git add chapter1.txt // to add a file to staging area
+git commit -m "complete chapter1" // commit to repository under version control -m to add message always use present tense
+git log // to see what commits have been made
+git add . // adds all files in working directory to staging area
+git diff chapter3.txt // check what are the changes since last commit
+git checkout chapter3.txt // revert to last saved version of chapter 3
