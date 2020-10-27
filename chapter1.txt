@@ -1,5 +1,6 @@
-//my first git lesson
+//------------------my first git lesson------------------
 
+//--------------------on terminal---------------------
 go to working directory
 git init // to initialize your git repository
 ls -a // to list all hidden files like the .git
@@ -8,12 +9,30 @@ git add chapter1.txt // to add a file to staging area
 git commit -m "complete chapter1" // commit to repository under version control -m to add message always use present tense
 git log // to see what commits have been made
 git add . // adds all files in working directory to staging area
+git rm --cached -r . //removes everything from staging area
 git diff chapter3.txt // check what are the changes since last commit
 git checkout chapter3.txt // revert to last saved version of chapter 3
 
-//to save remotely
-create new repository on github and copy its link
-git remote add origin https://github.com/zbarbir/Story.git //it's telling local repository that we've created a remote one and give it its location
+//-----------------to save remotely-----------------------------
+//First create new repository on github and copy its link
+git remote add origin https://github.com/etc  //it's telling local repository that we've created a remote one and give it its location
 //origin is name of remote repository, keep it as is
 git push -u origin master//push local repository onto remote one called called origin
 //-u links up local to remote (called origin) to the branch called (master) (it's the default branch)
+
+
+
+//------------------to create a .gitignore file----------------------
+//in your working directory:
+touch .gitignore // to create file that lists the files that git should not add to repository
+inside .ignore, type each file you want to ignore on a new line, #for comments, *.txt to choose all .txt files
+
+//-------------------to clone a repository---------------------
+//instead of downloading zip file, copy it's https link and :
+git clone https://github.com/filestoclone
+
+//--------------------branches---------------------------------
+git branch bookBranch //to create new branch called bookBranch
+git branch // to view list of branches
+//the asterix shows you which branch you're currently on
+git checkout bookBranch // to switch to bookBranch
